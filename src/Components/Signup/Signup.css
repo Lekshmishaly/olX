@@ -1,0 +1,63 @@
+.signupParentDiv {
+  border: 2px solid black;
+  width: max-content;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signupParentDiv .input {
+  width: 272px;
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 28px;
+  margin-top: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.singup-image {
+  width: 180px;
+  margin-left: 46px;
+  height: 130px;
+}
+.signupParentDiv button {
+  margin-top: 7px;
+  width: 100%;
+  height: 48px;
+  /* border-color: transparent; */
+  background-color: #00513f;
+  color: whitesmoke;
+  font-weight: 900;
+  border-radius: 7px;
+  border: 2px solid #00513f;
+}
+.signupParentDiv button:hover {
+  background-color: #c7d393;
+  color: #000000;
+  border: 2px solid #002f34;
+}
+
+.signupParentDiv a {
+  display: flex;
+  margin-top: 8px;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: underline;
+  height: 26px;
+  border: 1px solid hsl(167deg 100% 16% / 17%);
+  border-radius: 4px;
+  background-color: hsl(167deg 100% 16% / 17%);
+}
+.signupParentDiv a:hover {
+  border: 1px solid black;
+  color: #ffffff;
+  background-color: hsla(167, 100%, 16%, 0.466);
+}
+.signupParentDiv h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,113 @@
+.moreView,
+.freshRecommendations {
+  margin: 16px;
+  padding: 16px 16px 32px;
+  background-color: #ebeeef;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+}
+
+.heading :last-child {
+  font-size: 14px;
+  color: #002f34;
+}
+
+.cards {
+  display: flex;
+  gap: 21px;
+  flex-direction: row;
+  overflow-x: scroll; /* Allows horizontal scrolling */
+  overflow-y: hidden;
+  padding: 10px;
+  white-space: nowrap; /* Prevents wrapping to a new line */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;
+}
+
+.cards::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Scrollbar track color */
+}
+
+.card {
+  padding: 0;
+  flex: 0 0 auto; /* Ensures the cards stay in a row and don't shrink */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-right: 2px solid; /* Adds border on the right side */
+  max-width: 280px; /* Set a fixed width for your cards */
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 21px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .image img {
+  height: 302px;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .content .rate {
+  margin-top: 1px;
+  font-size: larger;
+  /* font-weight: bold; */
+}
+
+.card .content .kilometer {
+  font-size: medium;
+}
+
+.card .content .name {
+  font-size: small;
+}
+
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+}
+.content {
+  margin-top: 10px;
+}

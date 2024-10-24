@@ -1,0 +1,108 @@
+.headerParentDiv {
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  overflow: hidden; /* Ensure no overflow */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+.headerChildDiv {
+  width: 100%;
+  max-width: 1349px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+}
+.dropdown {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 117px;
+  height: 30px;
+  margin: 7px;
+  margin-right: 18px;
+  outline: none;
+}
+
+.placeSearch {
+  width: 9em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.productSearch {
+  width: 35em;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.productSearch .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 0;
+}
+
+.productSearch .input input {
+  width: 100%;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.productSearch .searchAction {
+  min-width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  cursor: pointer;
+  background-color: #000000;
+  border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction img {
+  width: 24px; /* Set the size of the search icon */
+  height: 24px;
+}
+
+.loginPage {
+  padding: 0 10px;
+}
+
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap; /* Ensure it doesn't wrap */
+}
+
+@media only screen and (max-width: 700px) {
+  .placeSearch,
+  .productSearch,
+  .sellMenu {
+    display: none;
+  }
+}
+.multiple-language {
+  outline: none;
+}
